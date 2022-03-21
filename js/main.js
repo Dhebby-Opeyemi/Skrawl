@@ -22,16 +22,9 @@ function linkAction(){
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-//var signin = document.getElementById("signin");
-//var button = document.getElementById("showin");
+let btn = document.getElementById(showbar);
+let el = document.getElementById(signin);
 
-//button.onClick = function() {
- //   if(signin.className == "open"){
-   //     signin.className == "";
-     //   button.innerHTML = "SignUp"
-    //} else{
-        
-      //  signin.className == "open"
-        //button.innerHTML = "SignIn"
-    //}
-//};
+btn.addEventListener('click', function () {
+    el.scrollIntoView(true);
+})

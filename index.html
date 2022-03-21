@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKRAWL</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon (2).ico">
 
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,7 +22,7 @@
         <nav class="nav bd-grid ">
             <div class="sidebar">
                 <a href="#" class="nav__logo"><i class="fa fa-thumb-tack" aria-hidden="true"></i>SKRAWL</a>
-                <button type="button" id="showin" class="button-head">SignUp</button>
+                <button type="button" id="showbar" class="button-head">SignUp</button>
             </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -120,57 +121,58 @@
 
        <!--SignIn Form-->
        
-        <section class="section" id="signin">
-            <div class="form">
-                <h1 class="form-title">Sign in to continue<br>sharing</h1>
-                <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique perspiciatis nisi?</p>
-                <input type="email" name="email" placeholder="Email" class="email-input">
-                <input type="password" name="password" placeholder="Password" class="password-input">
-                <button class="btn" type="button">Sign in</button>
-                <div class="links">
-                    <a href="#signup">Don't have an account?<a>
-                    <a href="#forgot">forgot Password</a>
+        <section class="section" >
+            <div class="form-container" >
+
+                <div class="form" id="signin">
+                    <h1 class="form-tit">Sign in to continue<br>sharing</h1>
+                    <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique perspiciatis nisi?</p>
+                    <input type="email" name="email" placeholder="Email" class="email-input">
+                    <input type="password" name="password" placeholder="Password" class="password-input">
+                    <button class="btn">Sign in</button>
+                    <div class="links">
+                        <a href="#signup" >Don't have an account?<a>
+                        <a href="#forgot">forgot Password</a>
+                    </div>
+                   <p class="form-text2">or Signin With</p>
+                   <div class="icon">
+                       <button type="button"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</button>
+                       <button type="button"><i class="fa fa-google" aria-hidden="true"></i>Google</button>
+                   </div>
                 </div>
-                <p class="form-text2">or Signin With</p>
-                <div class="icon">
-                    <button type="button"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</button>
-                    <button type="button"><i class="fa fa-google" aria-hidden="true"></i>Google</button>
+
+
+                <div class="form" id="signup">
+                    <h1 class="form-title">Share your experience <br> to the world</h1>
+                    <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique perspiciatis nisi?</p>
+                    <input type="email" name="email" placeholder="Email" class="email-input">
+                    <input type="password" name="password" placeholder="Password" class="password-input">
+                    <button class="btn" type="button">Sign Up</button>
+         
+                    <div class="links">
+                        <a href="#signin">Already have an account?<a>
+                    </div>
+                    <p class="form-text2">or Signup With</p>
+                    <div class="icon">
+                        <button type="button"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</button>
+                        <button type="button"><i class="fa fa-google" aria-hidden="true"></i>Google</button>
+                    </div>
+                </div>
+
+
+                <div class="form" id="forgot">
+                    <h1 class="form-title">Forgot your <br> password?</h1>
+                    
+                    <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique perspiciatis nisi?</p>
+                    <input type="email" name="email" placeholder="Email" class="email-input">
+                    <button class="btn" type="button">Recover Password</button>
+                    <p class="form-text2">Did you remember your password? <a class="log" href="#signin">Login</a></p>
+                    
                 </div>
             </div>
         </section>
 
-        <!--SIGNUP-->
-        <section class="section" id="signup">
-            <div class="form">
-                <h1 class="form-title">Share your experience <br> to the world</h1>
-                <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique perspiciatis nisi?</p>
-                <input type="email" name="email" placeholder="Email" class="email-input">
-                <input type="password" name="password" placeholder="Password" class="password-input">
-                <button class="btn" type="button">Sign Up</button>
-     
-                <div class="links">
-                    <a href="#signin">Already have an account?<a>
-                </div>
-                <p class="form-text2">or Signup With</p>
-                <div class="icon">
-                    <button type="button"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</button>
-                    <button type="button"><i class="fa fa-google" aria-hidden="true"></i>Google</button>
-                </div>
-            </div>
-        </section>
-
-        <!--FORGOTPASSWORD-->
-        <section class="section" id="forgot">
-            <div class="form">
-                <h1 class="form-title">Forgot your <br> password?</h1>
-                
-                <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique perspiciatis nisi?</p>
-                <input type="email" name="email" placeholder="Email" class="email-input">
-                <button class="btn" type="button">Recover Password</button>
-                <p class="form-text2">Did you remember your password? <a class="log" href="#signin">Login</a></p>
-                
-            </div>
-        </section>
+       
        
     </main>
     <script src="https://unpkg.coscrollreveal"></script>
