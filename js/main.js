@@ -22,9 +22,14 @@ function linkAction(){
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-let btn = document.getElementById(showbar);
-let el = document.getElementById(signin);
+let btn = document.getElementById('scroll-into-view');
+let into = document.getElementById('signup');
 
-btn.addEventListener('click', function () {
-    el.scrollIntoView(true);
+btn.addEventListener('click',  (ev)=> {
+    into.scrollIntoView(true);
+})
+
+const span = document.getElementById("text-content")
+span.addEventListener("click", () => {
+    span.textContent("Sign In");
 })
