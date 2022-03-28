@@ -59,6 +59,7 @@ header{
 }
 
 
+
 /*NAV*/
 .nav{
     height: 3rem;
@@ -155,7 +156,10 @@ header{
     font-size: 3rem;
     font-family: 'poppins';
     font-weight: 700;
+    display: block;
+    padding-left: 2rem;
 }
+
 
 
 
