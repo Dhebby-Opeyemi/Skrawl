@@ -25,9 +25,12 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 let btn = document.getElementById('scroll-into-view');
 let into = document.getElementById('signup');
 
-btn.addEventListener('click',  (ev)=> {
+
+// For the Button to Change to Sign In After Clicking
+
+btn.addEventListener('click',  (e)=> {
     into.scrollIntoView(true);
-})
+});
 
 const span = document.getElementById("text-content")
 span.addEventListener("click", () => {
