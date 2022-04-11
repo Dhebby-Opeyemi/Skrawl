@@ -221,11 +221,11 @@ header{
     border-radius: 5px;
     background-color: #6b096b;
     box-shadow: 0 8px 25px rgba(14, 36, 49, .15);
-    -ms-overflow-style: none;  /*new code added by Tobi*/
-    scrollbar-width: none;     /*new code added by Tobi*/
+    -ms-overflow-style: none;  
+    scrollbar-width: none;   
 }
 .form-container::-webkit-scrollbar{
-    display: none; /*new code added by Tobi*/
+    display: none;
 }
 .form{
     font-size: 1.5rem;
