@@ -401,7 +401,6 @@ button{
         background-color: #6b096b;
         box-shadow: 0 8px 25px rgba(14, 36, 49, .15);
         position: fixed; 
-        overflow: scroll;
     }
     
     .form-tit,
