@@ -405,8 +405,12 @@ button{
         background-color: #6b096b;
         box-shadow: 0 8px 25px rgba(14, 36, 49, .15);
         position: fixed; 
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
-    
+    .form-container::-webkit-scrollbar{
+        display: none;
+    }
     .form-tit,
     .form-title{
         margin-top: 2rem;
@@ -458,10 +462,4 @@ button{
 
     
 }
-/* @media screen and (min-width: 1024px){
-    .bd-grid{
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-} */

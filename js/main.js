@@ -28,11 +28,16 @@ let into = document.getElementById('signup');
 
 // For the Button to Change to Sign In After Clicking
 
-btn.addEventListener('click',  (e)=> {
-    into.scrollIntoView(true);
+let btnSend = document.querySelector('button');
+btnSend.addEventListener('click', () =>{
+    btnSend.innerHTML = `<a href="#signin" style="color:white";>SignIn</a>` ;
 });
 
-const span = document.getElementById("text-content")
-span.addEventListener("click", () => {
-    span.textContent("Sign In");
-})
+// btn.addEventListener('click',  (e)=> {
+//     into.scrollIntoView(true);
+// });
+
+// const span = document.getElementById("text-content")
+// span.addEventListener("click", () => {
+//     span.textContent("Sign In");
+// })
