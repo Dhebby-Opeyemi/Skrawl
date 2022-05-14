@@ -28,16 +28,30 @@ let into = document.getElementById('signup');
 
 // For the Button to Change to Sign In After Clicking
 
-let btnSend = document.querySelector('button');
+let btnSend = document.getElementById('scroll-into-view');
+let form = document.getElementsByClassName('form-container')[0];
 btnSend.addEventListener('click', () =>{
-    btnSend.innerHTML = `<a href="#signin" style="color:white";>SignIn</a>` ;
+    if(form.classList.contains('SignIn')) {
+        form.classList.remove('SignIn')
+        form.classList.add('SignUp')
+        form.classList.remove('Forgot')
+        btnSend.innerHTML = 'SignIn' ;
+    } else {
+        form.classList.remove('SignUp')
+        form.classList.remove('Forgot')
+        form.classList.add('SignIn')
+        btnSend.innerHTML = 'SignUp' ;
+    }
+    // form.classList.toggle('SignIn')
 });
 
-// btn.addEventListener('click',  (e)=> {
-//     into.scrollIntoView(true);
-// });
+let forgot = document.getElementById('forgot')
 
-// const span = document.getElementById("text-content")
-// span.addEventListener("click", () => {
-//     span.textContent("Sign In");
-// })
+forgot.addEventListener('click', () => {
+    if(form.classList.contains('SignIn')||form.classList.contains('SignUp')) {
+        form.classList.remove('SignIn')
+        form.classList.remove('SignUp')
+        form.classList.add('Forgot')
+        btnSend.innerHTML = 'SignUp' ;
+    }
+})
